@@ -6,6 +6,7 @@ module Fastlane
 
         token = params[:token]
         chat_id = params[:chat_id]
+        message_thread_id = params[:message_thread_id]
         text = params[:text]
         parse_mode = params[:parse_mode]
         file_path = params[:file]
@@ -43,6 +44,7 @@ module Fastlane
           "chat_id" => chat_id,
           text_parameter => text,
           "parse_mode" => parse_mode,
+          "message_thread_id" => message_thread_id,
           "document" => file
         })
 
