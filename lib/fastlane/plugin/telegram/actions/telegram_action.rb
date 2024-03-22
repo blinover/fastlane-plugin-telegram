@@ -103,6 +103,11 @@ module Fastlane
                                            env_name: "TELEGRAM_PROXY",
                                         description: "Proxy URL to be used in network requests. Example: (https://123.45.67.89:80)",
                                            optional: true,
+                                               type: String),
+                    FastlaneCore::ConfigItem.new(key: :message_thread_id,
+                                           env_name: "MESSAGE_THREAD_ID",
+                                        description: "Message thread id",
+                                           optional: true,
                                                type: String)
                 ]
       end
